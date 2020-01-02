@@ -1,0 +1,45 @@
+
+.navbar {
+    overflow: hidden;
+    background-color: #54e66e;
+    background-image: linear-gradient(to right, rgb(84, 230, 110),lightgreen);
+    position: fixed; 
+    top: 0;
+    left:0;
+    width: 100%;
+}
+body{
+    background-image: linear-gradient(rgb(44, 62, 80),rgb(189, 195, 199));
+}
+footer{
+    text-align: center;
+    width: 100%;
+    float: right;
+    
+    
+
+}
+.navbar a {
+    height: 10px;
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 18px
+}
+#logo {
+    padding: 0px;
+}
+#home{
+    height: 75px;
+}
+.navbar a:hover {
+    background: lightgreen;
+    color: black;
+}   
+
+.content {
+    padding-top: 30px;
+}

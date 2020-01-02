@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Xavier's Emporium</title>
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="Product.css">
+    <style>
+        #product{
+    background-image: linear-gradient(  lightgreen,white);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-style: solid;
+}
+        h1{
+            color:black;
+        }
+        input{
+            border-style:solid;
+            font-size: 20px;
+        }
+        legend{
+            font-size: 30px;
+        }
+        label{
+            font-size: 25px;
+        }
+        #purchase{
+        border-color: black;
+        background-color: lightpink;
+        padding: 30px;
+        color: black;
+        border-color: #000000;
+        border-style: solid;
+        border-width: thick;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 45%;
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+<div class="navbar">
+    <a href="Main.html" id="logo" ><img src="Assets/Logo.png" alt="Home" id="home"></a>
+    <a href="Case.html">Case</a>
+    <a href="Stickers.html">Pusheen</a>
+    <a href="Stickers2.html">Rick &amp; Morty</a>
+    <a href="Minibag.html">Mini Bag</a>
+    <a href="Gymbag.html">Gym Bag</a>
+</div>
+<div class="content">
+    <div id="product">
+           <h1>Purchase Page</h1>
+    <form method="post" action="mailto:x.loera2@gmail.com" enctype="text/plain" onsubmit="window.alert('Your info has Been Mailed')">
+        <fieldset id="customer_info">
+            <legend>Customer Information</legend>
+            <ul>
+                <li>
+                    <label for="customer-name">Your Name:</label>
+                    <input type="text" name="customer" id="customer-name" class="textinput" maxlength="40">
+                </li>
+                <li>
+                    <label for="customer-email">Email:</label>
+                    <input type="text" name="email" id="customer-email" class="textinput" maxlength="40">
+                </li>
+                <li>
+                    <label for="customer-password">Password:</label>
+                    <input type="text" name="password" id="customer-password" class="textinput" maxlength="40">
+                </li>
+                <li>
+                    <label for="customer-country">Country:</label>
+                    <select name="country" id="customer-country" >
+                        <option value="USA">United States</option>
+                        <option selected>Canada</option>
+                        <option>Mexico</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="customer-state">State:</label>
+                    <input type="text" name="state" id="customer-state" class="textinput" maxlength="40" size="2">
+                </li>
+                <li>
+                    <label for="customer-city">City:</label>
+                    <input type="text" name="city" id="customer-city" class="textinput" maxlength="40">
+                </li>
+                <li>
+                    <label for="customer-zip">Zip:</label>
+                    <input type="text" name="zip" id="customer-zip" class="textinput" maxlength="15">
+                </li>
+                <li>
+                    <label for="customer-address">Address:</label>
+                    <input type="text" name="email" id="customer-address" class="textinput" maxlength="50">
+                </li>
+                
+            </ul>
+        </fieldset>
+        <fieldset id="billing_info">
+            <legend>Billing Information</legend>
+            <ul>
+                <li>
+                    <label for="customer-card">Card Number:</label>
+                    <input type="text" name="card" id="customer-card" class="textinput" maxlength="16">
+                </li>
+                <li>
+                    <label for="customer-cvc">CVC/Secure Code:</label>
+                    <input type="text" name="cvc" id="customer-cvc" class="textinput" maxlength="4">
+                </li>
+                <li>
+                    <label for="customer-expdate">Expiration Date:</label>
+                    <input type="text" name="EXPDate" id="customer-expdate" class="textinput" maxlength="5">
+                </li>
+                <li>
+                    <label for="customer-country2">Country:</label>
+                    <select name="country2" id="customer-country2">
+                        <option value="USA">United States</option>
+                        <option selected>Canada</option>
+                        <option>Mexico</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="customer-state2">State:</label>
+                    <input type="text" name="state2" id="customer-state2" class="textinput" maxlength="40" size="2">
+                </li>
+                <li>
+                    <label for="customer-zip2">Zip:</label>
+                    <input type="text" name="zip2" id="customer-zip2" class="textinput" maxlength="15">
+                </li>
+                
+            </ul>
+        </fieldset>
+        <fieldset id="items_ordered">
+            <legend>Quantity of Items</legend>
+            <ul>
+
+                <li>
+                    <label for="item1">Quantity of Corgi Phone Cases:</label>
+                    <input type="text" name="item1" id="item1" class="textinput" maxlength="4" size="4">
+                </li>
+                <li>
+                    <label for="item2">Quantity of Pusheen Sticker Sets:</label>
+                    <input type="text" name="item2" id="item2" class="textinput" maxlength="4" size="4">
+                </li>
+                <li>
+                    <label for="item3">Quantity of Rick &amp; Morty Sticker Sets:</label>
+                    <input type="text" name="item3" id="item3" class="textinput" maxlength="4" size="4">
+                </li>
+                <li>
+                    <label for="item4">Quantity of T60 Gym Bags:</label>
+                    <input type="text" name="item" id="item4" class="textinput" maxlength="4" size="4">
+                </li>
+                <li>
+                    <label for="item5">Quantity of Mini Bag Sets:</label>
+                    <input type="text" name="item5" id="item5" class="textinput" maxlength="4" size="4">
+                </li>
+                
+
+
+                
+            </ul>
+        </fieldset>
+        
+        
+    
+        <input type ="hidden" name="success" value="success.htm">
+        <input type ="submit" value="Purchase" id="purchase">
+        <br/>
+        <input type ="reset"  value="clear">
+    </form>
+    </div>
+    <footer><br/>
+        <br/>&copy; 2019 Xavier Loera Flores | x.loera2@gmail.com</footer>
+</div>   
+</body>
+</html>
